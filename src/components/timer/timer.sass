@@ -1,0 +1,73 @@
+@import ../../styles/effects
+
+.dsplay-fit-text-ready
+  @include animation(fadeIn 1s ease-in)
+
+.divider
+  animation: blinker 1s linear infinite
+  
+@keyframes blinker 
+  50% 
+    opacity: 0
+
+.countdown
+  height: 70vh !important
+  width: 100vw !important
+.days,
+.hours,
+.minutes,
+.seconds
+  height: 100vh !important
+  width: 20vw !important
+
+.time-value
+  height: 30vh
+  width: 25vw
+
+.time-title
+  height: 10vh
+  width: 25vw
+
+.divider
+  height: 30vh
+  width: 2vw
+
+.portrait
+  .divider
+    height: 20vh
+    width: 4vw
+  .ds-grid-item 
+    height: 10vh !important
+    width: 46vw !important
+  .countdown-cta
+    text-align: center
+  .time-value,
+  .time-title
+    text-align: center
+    width: 48vw
+  .time-value
+    height: 20vh
+  .time-title
+    height: 10vw
+  .hidden
+    display: none
+
+.square
+  .divider
+    height: 20vh
+    width: 4vw
+  .ds-grid-item 
+    height: 10vh !important
+    width: 46vw !important
+  .countdown-cta
+    text-align: center
+  .time-value,
+  .time-title
+    text-align: center
+    width: 48vw
+  .time-value
+    height: 25vh
+  .time-title
+    height: 10vw
+  .hidden
+    display: none

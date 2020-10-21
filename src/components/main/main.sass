@@ -1,0 +1,39 @@
+@import ../../styles/effects
+
+.dsplay-fit-text-ready
+  @include animation(fadeIn 2s ease-in)
+
+.app, .main
+    padding: 0 !important
+    margin: 0 !important
+    overflow: hidden
+    width: 100vw
+    height: 100vh
+
+.countdown-cta
+  height: 25vh !important
+  margin: 5vh 20vw
+  font-family: 'Roboto Condensed'
+
+.main
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+//CLOCK THEMES
+.dark
+    background-color: #0f0f0f
+
+.light
+  background-color:  #E9E8E2
+  .time-value,
+  .time-title
+    color:  #8d8d8d
+  .countdown-cta
+    color: #8d8d8d
+
+.sky
+  background-color:  #489fc2
+  .divider
+    color: #ffae00
