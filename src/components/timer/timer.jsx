@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {
-  FitText,
+  FitText, useTemplateVal,
 } from '@dsplay/react-template-utils';
 import './timer.sass';
 import moment from 'moment';
@@ -10,6 +10,7 @@ const Timer = (props) => {
   const [counter, setCounter] = useState({
     days: 0, hours: 0, minutes: 0, seconds: 0,
   });
+  const counterColor = useTemplateVal('counter_text_color');
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -28,7 +29,9 @@ const Timer = (props) => {
   }, []);
 
   return (
-    <div className="ds-container countdown">
+    <div  className="ds-container countdown" 
+    style={{ color: `${counterColor}` }}
+    >
       <div className="ds-grid-item days">
         <div className="time-value">
           <FitText>{counter.days}</FitText>
