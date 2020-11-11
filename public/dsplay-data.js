@@ -27,12 +27,13 @@ var dsplay_template = {
 
     title: "My Super Template",
     expanded: "false",
+
     call_to_action_title: "Promoção termina em:",
     time_till_date: "12 10 2020, 8:00 pm",
-    background_color: "#000333",
     counter_text_color: "#fffAAA",
     title_text_color: "#0000ff",
     background: "../test-assets/gift-tape-red.jpg",
+    background_color: "#000333",
     theme: "sky",
 
 };
