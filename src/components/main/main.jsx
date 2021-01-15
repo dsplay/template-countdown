@@ -19,8 +19,7 @@ function Main() {
   return (
     <div
       className={`main ${useTemplateVal('theme')}`}
-      style={{ backgroundImage: `url(${background})` }}
-
+      style={{ background: `url(${background})` }}
     >
       <div className="ds-container">
         <div className="ds-grid-item countdown-cta"

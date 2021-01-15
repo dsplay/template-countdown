@@ -9,7 +9,9 @@
 @keyframes blinker 
   50% 
     opacity: 0
-
+.countdown-cta
+  text-shadow: 1px 0px 1px #333, 0px 1px 1px #666, 2px 1px 1px #333, 1px 2px 1px #666, 3px 2px 1px #333, 2px 3px 1px #666, 4px 3px 1px #333, 3px 4px 1px #666, 5px 4px 1px #333, 4px 5px 1px #666, 6px 5px 1px #333, 5px 6px 1px #666, 7px 6px 1px #333
+  text-align: center
 .countdown
   height: 70vh !important
   width: 100vw !important
@@ -17,16 +19,22 @@
 .hours,
 .minutes,
 .seconds
-  height: 100vh !important
+  height: 50vh !important
   width: 20vw !important
+  background-color: black
+  margin: 1vw
+  border-radius: 2vh
+  
+
+
 
 .time-value
   height: 30vh
-  width: 25vw
-
+  width: 22vw
+  text-shadow: 1px 0px 1px #333, 0px 1px 1px #666, 2px 1px 1px #333, 1px 2px 1px #666, 3px 2px 1px #333, 2px 3px 1px #666, 4px 3px 1px #333, 3px 4px 1px #666, 5px 4px 1px #333, 4px 5px 1px #666, 6px 5px 1px #333, 5px 6px 1px #666, 7px 6px 1px #333
 .time-title
   height: 10vh
-  width: 25vw
+  width: 22vw
 
 .divider
   height: 30vh
@@ -37,18 +45,24 @@
     height: 20vh
     width: 4vw
   .ds-grid-item 
-    height: 10vh !important
-    width: 46vw !important
+    height: 15vh !important
+  .days,
+  .hours,
+  .minutes,
+  .seconds
+    height: 30vh !important 
+    width: 45vw !important
+    
   .countdown-cta
     text-align: center
   .time-value,
   .time-title
     text-align: center
-    width: 48vw
+    width: 45vw
   .time-value
     height: 20vh
   .time-title
-    height: 10vw
+    height: 8vw
   .hidden
     display: none
 
@@ -58,16 +72,42 @@
     width: 4vw
   .ds-grid-item 
     height: 10vh !important
-    width: 46vw !important
+    width: 30vw !important
   .countdown-cta
     text-align: center
   .time-value,
   .time-title
     text-align: center
-    width: 48vw
+    width: 35vw
   .time-value
     height: 25vh
+    width: 35vw
   .time-title
     height: 10vw
   .hidden
+    display: none
+  .days,
+  .hours,
+  .minutes,
+  .seconds
+    height: 35vh !important
+    margin: 1vw
+    border-radius: 2vh
+    margin-left: 6vw
+    margin-right: 6vw
+
+.h-banner
+  .days,
+  .hours,
+  .minutes,
+  .seconds
+    height: 70vh !important
+    width: 15vw !important
+    margin: 1vw
+
+  .ds-grid-item 
+    border-radius: 15vh
+    width: 15vw !important
+
+  .time-title
     display: none
